@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    height: calc(100vh-70px);
+    display: flex;
+    margin-top:45px;
+    
+    
+    
+}
+
+.content{
+    background-color:#f9f9f9 ;
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+    
+}
+.videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 15%;
+}
+.video{
+    width: 270px;
+    margin-bottom: 30px;
+}
+.thumbnail{
+    width: 100%;
+    height: 170px;
+
+}
+.thumbnail img{
+    object-fit: cover;
+    width: 100%;
+    height: 94%;
+}
+.author img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.details{
+    display: flex;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.title h3{
+    color: rgb(3,3,3);
+    line-height:18px ;
+    font-size: 14px;
+    margin-bottom: 6px;
+
+}
+.title a, span{
+    text-decoration: none;
+    color: rgb(96, 96,96);
+    font-size: 12px;
+}
+
+@media(max-width:768px){
+    .sidebar{
+        display: none
+    }
+    .search{
+        display: none;
+    }
+}    
+@media(max-width:900px){
+    .search input{
+        width: 25rem;
+    }
+}
+
+    
+.header .left  .material-icons:hover{
+    background-color: rgb(214, 214, 215);
+}
+.header .right .material-icons:hover{
+    background-color: rgb(214, 214, 215);
+}
